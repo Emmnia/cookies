@@ -20,6 +20,11 @@ body {
     color: white;
 }
 
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,6 +47,23 @@ body {
 
 .button:hover {
     background-color: #eeeeee;
+}
+
+.violet-button {
+    width: 180px;
+    background-color: #5243F4;
+    color: white;
+}
+
+.violet-button:hover {
+    background-color: #3b2cd8;
+}
+
+.common-title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
 }
 
 .header {
@@ -108,4 +130,213 @@ body {
     top: 0;
     right: 0;
     z-index: -1;
+}
+
+.products {
+    position: relative;
+    padding: 100px 0;
+}
+
+.products-items {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px 24px;
+}
+
+.products-item {
+    width: 384px;
+    color: #5D3427;
+    background-color: white;
+}
+
+.products-item-image {
+    height: 202px;
+    text-align: center;
+}
+
+.products-item-image img {
+    position: relative;
+    top: -70px;
+    height: 272px;
+    max-width: 100%;
+
+}
+
+.products-item-details {
+    padding: 24px;
+}
+
+.products-item-title {
+    margin-bottom: 20px;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.products-item-text {
+    margin-bottom: 20px;
+    height: 110px;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.products-item-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-item-price {
+    margin-bottom: 10px;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5243F4;
+}
+
+.products-item-weight {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.love {
+    padding: 64px 0 150px 0;
+}
+
+.love-items {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.love-item {
+    width: 590px;
+    height: 453px;
+}
+
+.love-item-white {
+    padding: 110px 80px;
+    color: #5D3427;
+    background-color: white;
+}
+
+.love-item-title {
+    margin-bottom: 20px;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+}
+
+.love-item-text {
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.order {
+    position: relative;
+    padding-bottom: 102px;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order-block {
+    margin-top: 103px;
+    display: flex;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.order-form {
+    margin-left: 200px;
+    padding: 40px 0 44px 0;
+    max-width: 387px;
+}
+
+.order-form-text {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.order-form-inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-inputs input {
+    margin-bottom: 16px;
+    padding: 24px 22px;
+    width: 100%;
+    height: 68px;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    border-radius: 60px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+.order-form-inputs input::placeholder {
+    font-family: 'Steppe-Book', sans-serif;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.order-form-inputs .button.violet-button {
+    width: 100%;
+    height: 71px;
+}
+
+.order-block-image {
+    margin-left: 109px;
+    height: 501px;
+}
+
+.order-image {
+    position: relative;
+    top: -58px;
+    height: 559px;
+}
+
+.order-bg-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 810px);
+    z-index: -1;
+}
+
+.footer {
+    padding: 126px 0 50px 0;
+    text-align: center;
+}
+
+.rights {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.line1 {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 960px);
+    z-index: -2;
+}
+
+.line2 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: -2;
+}
+
+.line3 {
+    position: absolute;
+    top: -920px;
+    left: 0;
+    z-index: -2;
 }

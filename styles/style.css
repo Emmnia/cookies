@@ -66,6 +66,41 @@ body {
     text-align: center;
 }
 
+.currency {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 5px 10px;
+    height: 35px;
+    min-width: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
 .header {
     padding: 40px 0;
 }
